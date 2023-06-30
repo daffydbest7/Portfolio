@@ -1,10 +1,9 @@
 import React from "react";
 //import icons
-import {BiHomeAlt, BiUser, BiHomeHeart} from 'react-icons/bi';
-import { BsClipboardData, BsBriefcase } from "react-icons/bs";
+import { BiUser, BiHomeHeart} from 'react-icons/bi';
 import {GiSkills} from 'react-icons/gi';
 import {MdOutlineConnectWithoutContact, MdOutlineMiscellaneousServices, MdWorkHistory} from 'react-icons/md';
-import {GrServices} from 'react-icons/gr';
+
 
 
 
