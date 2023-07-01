@@ -60,7 +60,7 @@ const Services =()=>{
                                 <h4 className="text-teal-500 mt-2">{name} </h4>  
                                 <p className="mb-4">{description}</p>
                                 </div>
-                                <div className="flex mb-2 ml-4 text-teal-500"><a href="#" >{link}</a> <BsArrowUpRight className="ml-2"/></div>   
+                                <div className="flex mb-2 ml-4 text-teal-500"><button href="#" >{link}</button> <BsArrowUpRight className="ml-2"/></div>   
                             </div>
                            ) 
 

@@ -27,8 +27,8 @@ function App() {
                     :
                     <BsFillMoonStarsFill className='cursor-pointer text-2xl md:text-3xl hover:text-teal-400 hover:scale-110 duration-200'/> }</li>
                     
-                  <li> <a className='bg-gradient-to-r from-cyan-400 to-teal-600 text-white text-2xl px-4 py-2 rounded-md ml-8 md:ml-12 
-                  md:px-8 md:py-4 md:text-3xl hover:bg-gradient-to-l from-cyan-400 to-teal-600 hover:scale-105 duration-200' href="#">Hire Me</a></li>
+                  <li> <button className='bg-gradient-to-r from-cyan-400 to-teal-600 text-white text-2xl px-4 py-2 rounded-md ml-8 md:ml-12 
+                  md:px-8 md:py-4 md:text-3xl hover:bg-gradient-to-l from-cyan-400 to-teal-600 hover:scale-105 duration-200' href="#">Hire Me</button></li>
                 </ul>
             </nav>
             <div className="hidden text-white text-2xl dark:block"> NightLife</div>

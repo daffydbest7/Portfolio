@@ -72,9 +72,9 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                  className="flex justify-center lg:justify-start  space-x-3 my-4 text-2xl text-black lg:text-4xl my-8 lg:hidden">                  
-                    <a href="#"> <FaGithub className="hover:text-teal-500 hover:scale-105 duration-300"/></a>
-                    <a href="#"><FaInstagram className="hover:text-teal-500 hover:scale-105 duration-300"/></a>
-                    <a href="#"><FaTwitter className="hover:text-teal-400 hover:scale-105 duration-300" /></a>                               
+                    <button href="#"> <FaGithub className="hover:text-teal-500 hover:scale-105 duration-300"/></button>
+                    <button href="#"><FaInstagram className="hover:text-teal-500 hover:scale-105 duration-300"/></button>
+                    <button href="#"><FaTwitter className="hover:text-teal-400 hover:scale-105 duration-300" /></button>                               
                 </motion.div>
                 <motion.div 
                 variants={
