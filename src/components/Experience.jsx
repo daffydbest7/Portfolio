@@ -44,7 +44,7 @@ const Experience =() =>{
                 className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 text-2xl">
 
                     { skills.map(({id,src,title,style})=>(
-                        <div key={id} className={"shadow-md  py-2 rounded-lg"+" "+ style}>
+                        <div key={id} className={"shadow-md  py-2 rounded-lg"+ style}>
                         <img src={src} alt="" className="w-60 mx-auto hover:scale-110 rounded-md duration-500"/>
                         <p className="mt-4 uppercase"> {title} </p>
                         </div>
