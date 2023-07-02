@@ -45,7 +45,7 @@ const About = () => {
                 mix-blend-luminosity bg-top rounded-2xl hover:scale-105 duration-300"></motion.div>
                 {/** about image for sm */}
                 <div className="md:hidden ">
-                  <img src={about} className="h-full w-full rounded-md dark:mix-plus-lighter"/>
+                  <img src={about} className="h-full w-full rounded-md dark:mix-plus-lighter" alt="small screen pic"/>
                 </div>
                 {/* texts here */}
                 <div className="flex-1 ">
