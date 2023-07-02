@@ -1,19 +1,19 @@
-/** @type {import('tailwindcss').Config} */
+/* @type {import('tailwindcss').Config} */
 module.exports = {
 
-  /** for toggling darkmode based on class */
+  /* for toggling darkmode based on class */
   darkMode: "class",
     content: [
       "./src/**/*.{js,jsx,ts,tsx}",
-    ],
+    ], 
     theme: {
       container: {
         padding: {
-          DEFAULT: '15px',
+          DEFAULT: '20px',
         },
       },
       screens: {
-        sm: '640px',
+        sm: '540px',
         md: '640px',
         lg: '1200px',
         xl: '1366px',

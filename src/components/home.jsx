@@ -17,10 +17,10 @@ import nightmode from "../images/nightmode.jpg";
 const Home =() => {
   
     return(
-        <div>
-        <div name="home"  className="dark:bg-gradient-to-t from-black to-black/5 dark:text-gray-300">
+        <div className="md:container lg:container">
+        <div className="min-h-[80vh] lg:min-h-[75vh] dark:bg-gradient-to-t from-black to-black/5 dark:text-gray-300">
             
-            <div className="container min-h-[72vh] lg:min-h-[78vh] mx-auto font-bold">
+            <div className="container mx-auto font-bold">
             <div className="flex flex-col items-center mt-12 gap-y-8 lg:flex-row lg:items-center lg:gap-x-12"> 
                 <div className="flex-1 text-center lg:text-left ">
                     <motion.h1 variants={
@@ -28,7 +28,7 @@ const Home =() => {
                     } initial="hidden"
                      whileInView={'show'} 
                      viewport={{once:false, amount:0.7}} 
-                     className="text-4xl mb-2 font-bolder leading-[0.8] lg:text-6xl">
+                     className="text-3xl mb-2 font-bolder leading-[0.8] lg:text-5xl">
                         DAVID <span>LAWRENCE</span>
                     </motion.h1>
                     <motion.div 
@@ -37,7 +37,7 @@ const Home =() => {
                     } initial="hidden"
                      whileInView={'show'} 
                      viewport={{once:false, amount:0.7}} 
-                     className="uppercase mb-6 text-2xl lg:text-4xl leading-[1]">
+                     className="uppercase mb-6 text-md lg:text-3xl leading-[1]">
                     <span className="mr-4"> I am a</span>
                     <TypeAnimation sequence={[
                         'Full stack Developer',
@@ -59,11 +59,15 @@ const Home =() => {
                     fadeIn('up', 0.5)
                 } initial="hidden"
                  whileInView={'show'} 
-                 viewport={{once:false, amount:0.7}} className="md:max-w-[600px] text-2xl">
+                 viewport={{once:false, amount:0.7}} className="md:max-w-[600px] text-md md:text-xl lg:text-xl">
                     lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
                     lorem ipsum sit emet consect
                     lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
                     lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
+                    lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
+                    lorem ipsum sit emet consect
+                    lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
+                    lorem ipsum sit emet consectlorem ipsum 
                 </motion.p>
                 <motion.div 
                 variants={
@@ -71,7 +75,7 @@ const Home =() => {
                 } initial="hidden"
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
-                 className="flex justify-center lg:justify-start  space-x-3 my-4 text-2xl text-black lg:text-4xl my-8 lg:hidden">                  
+                 className="flex justify-center lg:justify-start  space-x-3 my-4 text-2xl text-black lg:text-4xl my-8 lg:hidden dark:text-white">                  
                     <button href="#"> <FaGithub className="hover:text-teal-500 hover:scale-105 duration-300"/></button>
                     <button href="#"><FaInstagram className="hover:text-teal-500 hover:scale-105 duration-300"/></button>
                     <button href="#"><FaTwitter className="hover:text-teal-400 hover:scale-105 duration-300" /></button>                               
@@ -83,8 +87,8 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                  className=" mt-8">
-                    <button className="group flex mx-auto p-2 btn btn-lg rounded-xl text-white 
-                    bg-teal-500 drop-shadow-lg lg:m-0 cursor-pointer items-center"><span>PORTOLIO</span> <span className="group-hover:rotate-90 duration-300"><MdOutlineKeyboardArrowRight size={25}/></span> </button>
+                    <button  className="group flex mx-auto p-1 lg:p-2 btn btn-sm lg:btn-lg rounded-xl text-white 
+                    bg-teal-500 drop-shadow-lg lg:m-0 cursor-pointer items-center"><span>PORTOLIO</span> <span className="group-hover:rotate-90 duration-300"><MdOutlineKeyboardArrowRight className="text-2xl "/></span> </button>
                 </motion.div>
                 </div>
                 {/** daylight mode image */}
@@ -95,7 +99,7 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                   className="dark:hidden">
-                    <img src={Profile} className="max-w-[200px] max-h-[200px] lg:max-w-[300px] lg:max-h-[300px] rounded-full " alt="pic"/>
+                    <img src={Profile} className="max-w-[150px] max-h-[150px] lg:max-w-[250px] lg:max-h-[250px] rounded-full " alt="pic"/>
                 </motion.div>
 
                 {/**night mode image */}
@@ -106,7 +110,7 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                   className="hidden dark:block">
-                    <img src={nightmode} className="max-w-[200px] max-h-[200px] lg:max-w-[250px] lg:max-h-[250px] rounded-full hover:scale-105 duration-300 " alt="nightlifeimage"/>
+                    <img src={nightmode} className="max-w-[150px] max-h-[150px] lg:max-w-[250px] lg:max-h-[250px] rounded-full hover:scale-105 duration-300 " alt="nightlifeimage"/>
                 </motion.div>
             </div>
         </div>

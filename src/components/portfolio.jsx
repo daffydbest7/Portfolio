@@ -25,8 +25,8 @@ const Portfolio =() =>{
     ]
 
     return(
-        <section name="portfolio" className="section  w-full  md:h-screen dark:bg-black dark:text-gray-300" id="portfolio">
-            <div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full">
+        <section name="portfolio" className="container section md:h-screen dark:bg-black dark:text-gray-300">
+            <div className="max-w-screen-lg mx-auto flex flex-col justify-center h-full">
                {/** Portfolio header here */}
                 <div className="pb-8 ">
                     <p className="text-center text-teal-500 text-4xl font-bold lg:inline lg:border-b-4 lg:border-teal-500">Portfolio</p>
@@ -34,11 +34,11 @@ const Portfolio =() =>{
                 </div>
 
                 {/**portfolio cards here */}
-                <motion.div  variants={fadeIn('right', 0.3)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.5}}
-                className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+                <motion.div  variants={fadeIn('right', 0.3)} initial="hidden" whileInView={'show'} viewport={{once:true, amount:0.1}}
+                className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-2">
                 {
                     portfolios.map(({id,src}) => (                       
-                        <div key={id} className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105 text-2xl">
+                        <div key={id} className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105 text-xl">
                         <img src={src} alt="" className="rounded-md "/>
                         <div className="flex items-center justify-center">
                             <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-teal-500 font-bold uppercase">Code</button>

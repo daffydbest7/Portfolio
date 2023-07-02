@@ -6,10 +6,10 @@ const Footer =() => {
 
     return (
         <div className="w-full"> 
-            <div className="text-center min-h-[200px] text-white bg-black text-2xl">
+            <div className="text-center min-h-[200px] text-white bg-black text-md lg:text-2xl">
                 
-                <p className="pt-12">Developed by <span className="text-teal-500">David lawrence</span></p> <br/>
-                <p> &copy; 2023</p> 
+                <p className="pt-12">Developed by <span className="text-teal-500"> David lawrence </span>  &copy; 2023 </p>
+                
             </div>
         
         </div>

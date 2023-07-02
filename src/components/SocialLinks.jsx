@@ -9,9 +9,9 @@ const SocialLinks =() =>{
 
     const links =[
         {
-            id: 1,
-            child: (
-                <>
+            id: 1,  
+            child: (        
+                <>      
                 Resume <TfiUser size={30}/>
                 </>
             ),           
