@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.13659094.css",
-    "main.js": "/static/js/main.0103708a.js",
+    "main.css": "/static/css/main.f1c4c869.css",
+    "main.js": "/static/js/main.950b5819.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/developer.jpg": "/static/media/developer.bb45f9d7080827a90059.jpg",
     "static/media/services.jpg": "/static/media/services.4ddaf2f8d682d492dd2d.jpg",
     "static/media/analysis.jpg": "/static/media/analysis.06624edb50560fbe36eb.jpg",
     "static/media/about.jpg": "/static/media/about.abe28da415b7172d1943.jpg",
+    "static/media/reactjs.png": "/static/media/reactjs.6bcffb56bd0efaa47767.png",
     "static/media/profile_.jpg": "/static/media/profile_.de27f9bcdb108752e1a9.jpg",
     "static/media/nightmode.jpg": "/static/media/nightmode.2eb8c8e63e827286d026.jpg",
     "static/media/about2.jpg": "/static/media/about2.acc3be29bd4dc51ff7f9.jpg",
+    "static/media/html.png": "/static/media/html.c4d9c8dcdf4078875355.png",
+    "static/media/css.png": "/static/media/css.2145bb6c7160a7e0d8ab.png",
+    "static/media/mongodb.png": "/static/media/mongodb.2f70e12df8154af6527c.png",
+    "static/media/mysql.png": "/static/media/mysql.6e42b2a035b28f240021.png",
+    "static/media/python.png": "/static/media/python.a0b94590aa3e33174526.png",
+    "static/media/Powerbi.png": "/static/media/Powerbi.b3ded8d1fcccbd156d9f.png",
+    "static/media/github.svg": "/static/media/github.d5446dda21e09ecdae7d298c11acf09b.svg",
     "index.html": "/index.html",
-    "main.13659094.css.map": "/static/css/main.13659094.css.map",
-    "main.0103708a.js.map": "/static/js/main.0103708a.js.map",
+    "main.f1c4c869.css.map": "/static/css/main.f1c4c869.css.map",
+    "main.950b5819.js.map": "/static/js/main.950b5819.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13659094.css",
-    "static/js/main.0103708a.js"
+    "static/css/main.f1c4c869.css",
+    "static/js/main.950b5819.js"
   ]
 }
