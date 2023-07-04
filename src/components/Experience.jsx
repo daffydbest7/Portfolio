@@ -13,21 +13,21 @@ const Experience =() =>{
             id: 1,
             src: tailwind,
             title: 'Tailwind',
-            style: 'shadow-sky-400',
+            style: 'shadow-sky-400 shadow-md  py-2 rounded-lg',
 
         },
         {
             id: 2,
             src: react,
             title: 'react',
-            style: 'shadow-blue-500',
+            style: 'shadow-blue-500 shadow-md  py-2 rounded-lg',
 
         },
         {
             id: 3,
             src: github,
             title: 'github',
-            style: 'shadow-gray-800',
+            style: 'shadow-gray-800 shadow-md  py-2 rounded-lg',
 
         },
 
@@ -36,17 +36,17 @@ const Experience =() =>{
         <div name="experience" className="mx-auto lg:h-screen  w-full dark:bg-gradient-to-t from-black to-black dark:text-gray-300">
             <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full">
                 <div>
-                    <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline text-teal-500">Experience</p>
-                    <p className="py-6 text-2xl">Here are the technologies i have worked with</p>
+                    <p className="text-2xl lg:text-3xl font-bold border-b-4 border-gray-500 p-2 inline text-teal-500">Experience</p>
+                    <p className="py-6 text-md">Here are the technologies i have worked with</p>
                 </div>
 
                 <motion.div variants={fadeIn('right', 0.4)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.1}}
-                className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 text-2xl">
+                className="w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8  sm:px-0 lg:text-md">
 
                     { skills.map(({id,src,title,style})=>(
-                        <div key={id} className={"shadow-md  py-2 rounded-lg"+ style}>
+                        <div key={id} className={style}>
                         <img src={src} alt="" className="w-60 mx-auto hover:scale-110 rounded-md duration-500"/>
-                        <p className="mt-4 uppercase"> {title} </p>
+                        <p className="pt-4 uppercase"> {title} </p>
                         </div>
                     ))         
                     }

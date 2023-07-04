@@ -32,16 +32,16 @@ const services =[{
 
 const Services =()=>{
     return(
-       <section className="w-full pt-8 lg:min-h-screen dark:bg-gradient-to-t from-black to-black dark:text-gray-300" name="service">
-        <div className="container mx-auto ">
-            <div className="flex flex-col justify-between lg:flex-row">
+       <section className="w-full pt-8 lg:min-h-screen dark:bg-gradient-to-t from-black/95 to-black dark:text-gray-300" name="service">
+        <div className="lg:container mx-auto ">
+            <div className="container flex flex-col justify-between lg:flex-row">
                 {/* text & image*/}
                 
                 <motion.div variants={fadeIn('right', 0.3)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.1}}
-                className=" text-center flex-1 lg:bg-service_img bg-cover lg:max-w-[600px] lg:bg-bottom lg:mb-0 lg:bg-no-repeat dark:lg:mix-blend-luminosity rounded-2xl lg:hover:scale-110 duration-300">
+                className=" text-center flex-1 lg:bg-service_img bg-cover  lg:max-w-[400px] lg:bg-bottom lg:mb-0 lg:bg-no-repeat dark:lg:mix-blend-luminosity rounded-2xl lg:hover:scale-110 duration-300">
                     
-                    <h2 className="text-teal-500 lg:text-white font-bold text-3xl uppercase mb-6 pt-4 lg:text-4xl"> What I Do.</h2>
-                    <h3 className="dark:text-white text-xl mb-16 lg:text-2xl">
+                    <h2 className="text-teal-500 lg:text-white font-bold text-2xl uppercase mb-6 pt-4 lg:text-4xl"> What I Do.</h2>
+                    <h3 className="dark:text-white text-md mb-16 lg:text-xl lg:text-white">
                     I'm a freelance fullstack Developer with over 3 years of experience.  
                     </h3>
                     
@@ -56,11 +56,11 @@ const Services =()=>{
                             const {name, description, link} =service
                            return(
                             <div className="border border-b border-white mb-4 hover:scale-105 duration-300 " key={index}>
-                                <div className="lg:max-w-[600px] ml-4">
-                                <h4 className="text-teal-500 mt-2 text-xl lg:text-2xl">{name} </h4>  
-                                <p className="mb-4 text-md lg:text-xl">{description}</p>
+                                <div className="lg:max-w-[400px] ml-4">
+                                <h4 className="text-teal-500 mt-2 text-xl lg:text-xl">{name} </h4>  
+                                <p className="mb-4 lg:text-sm">{description}</p>
                                 </div>
-                                <div className="flex mb-2 ml-4 text-teal-500 items-center lg:text-xl"><button href="#" >{link}</button> <BsArrowRight size={8} className="ml-2"/></div>   
+                                <div className="flex mb-2 ml-4 text-teal-500 items-center "><button href="#" >{link}</button> <BsArrowRight size={8} className="ml-2"/></div>   
                             </div>
                            ) 
 

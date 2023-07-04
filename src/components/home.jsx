@@ -1,13 +1,16 @@
 import React from "react";
 //import icons
 import {MdOutlineKeyboardArrowRight} from "react-icons/md";
-import {FaGithub, FaInstagram, FaTwitter} from 'react-icons/fa';
+import {FaGithub, FaInstagram, FaTwitter, FaLinkedinIn} from 'react-icons/fa';
+import {HiOutlineMail} from "react-icons/hi";
+import {TfiUser} from 'react-icons/tfi';
 //import animation
 import {TypeAnimation} from 'react-type-animation';
 //import motion
 import {motion} from 'framer-motion';
 //import variants
 import {fadeIn} from '../variants';
+import { Link } from "react-router-dom";
 //import image
 import Profile from "../images/profile_.jpg";
 import nightmode from "../images/nightmode.jpg";
@@ -17,8 +20,8 @@ import nightmode from "../images/nightmode.jpg";
 const Home =() => {
   
     return(
-        <div className="md:container lg:container">
-        <div className="min-h-[80vh] lg:min-h-[75vh] dark:bg-gradient-to-t from-black to-black/5 dark:text-gray-300">
+        <div className="md:container lg:container xl:container 2xl:container 2xl:mx-auto lg:mx-auto md:mx-auto ">
+        <div className="min-h-[80vh] lg:min-h-[75vh]">
             
             <div className="container mx-auto font-bold">
             <div className="flex flex-col items-center mt-12 gap-y-8 lg:flex-row lg:items-center lg:gap-x-12"> 
@@ -28,7 +31,7 @@ const Home =() => {
                     } initial="hidden"
                      whileInView={'show'} 
                      viewport={{once:false, amount:0.7}} 
-                     className="text-3xl mb-2 font-bolder leading-[0.8] lg:text-5xl">
+                     className="text-3xl mb-2 font-bolder leading-[0.8] lg:text-5xl dark:text-white">
                         DAVID <span>LAWRENCE</span>
                     </motion.h1>
                     <motion.div 
@@ -59,10 +62,10 @@ const Home =() => {
                     fadeIn('up', 0.5)
                 } initial="hidden"
                  whileInView={'show'} 
-                 viewport={{once:false, amount:0.7}} className="md:max-w-[600px] text-md md:text-xl lg:text-xl">
+                 viewport={{once:false, amount:0.7}} className="md:max-w-[600px]  md:text-md lg:text-md text-justify">
                     lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
                     lorem ipsum sit emet consect
-                    lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
+                    lorem ipsum sit e consectlorem ipsum sit emet consectlorem ipsum sit emet consect
                     lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
                     lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
                     lorem ipsum sit emet consect
@@ -76,9 +79,12 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                  className="flex justify-center lg:justify-start  space-x-3 my-4 text-2xl text-black lg:text-4xl my-8 lg:hidden dark:text-white">                  
-                    <button href="#"> <FaGithub className="hover:text-teal-500 hover:scale-105 duration-300"/></button>
-                    <button href="#"><FaInstagram className="hover:text-teal-500 hover:scale-105 duration-300"/></button>
-                    <button href="#"><FaTwitter className="hover:text-teal-400 hover:scale-105 duration-300" /></button>                               
+                    <Link to="https://github.com/daffydbest7"> <FaGithub className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
+                    <Link to="https://instagram.com/daffydbest"><FaInstagram className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
+                    <Link to="https://twitter.com/daffydbest"><FaTwitter className="hover:text-teal-400 hover:scale-105 duration-300" /></Link>       
+                    <Link to="/DAVIDLAWRENCE.pdf" download={true}> <TfiUser className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
+                    <Link to="https://www.linkedin.com/in/david-lawrence-6b2513b0"><FaLinkedinIn className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
+                    <Link to="mailto:daffydbest@gmail.com"><HiOutlineMail className="hover:text-teal-400 hover:scale-105 duration-300" /></Link>                            
                 </motion.div>
                 <motion.div 
                 variants={
@@ -99,7 +105,7 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                   className="dark:hidden">
-                    <img src={Profile} className="max-w-[150px] max-h-[150px] lg:max-w-[250px] lg:max-h-[250px] rounded-full " alt="pic"/>
+                    <img src={Profile} className="max-w-[150px] max-h-[150px] lg:max-w-[200px] lg:max-h-[200px] rounded-full " alt="pic"/>
                 </motion.div>
 
                 {/**night mode image */}
@@ -110,7 +116,7 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                   className="hidden dark:block">
-                    <img src={nightmode} className="max-w-[150px] max-h-[150px] lg:max-w-[250px] lg:max-h-[250px] rounded-full hover:scale-105 duration-300 " alt="nightlifeimage"/>
+                    <img src={nightmode} className="max-w-[150px] max-h-[150px] lg:max-w-[200px] lg:max-h-[200px] rounded-full hover:scale-105 duration-300 " alt="nightlifeimage"/>
                 </motion.div>
             </div>
         </div>
