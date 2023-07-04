@@ -23,7 +23,7 @@ const Home =() => {
         <div className="md:container lg:container xl:container 2xl:container 2xl:mx-auto lg:mx-auto md:mx-auto ">
         <div className="min-h-[80vh] lg:min-h-[75vh]">
             
-            <div className="container mx-auto font-bold">
+            <div className="container mx-auto ">
             <div className="flex flex-col items-center mt-12 gap-y-8 lg:flex-row lg:items-center lg:gap-x-12"> 
                 <div className="flex-1 text-center lg:text-left ">
                     <motion.h1 variants={
@@ -31,7 +31,7 @@ const Home =() => {
                     } initial="hidden"
                      whileInView={'show'} 
                      viewport={{once:false, amount:0.7}} 
-                     className="text-3xl mb-2 font-bolder leading-[0.8] lg:text-5xl dark:text-white">
+                     className="text-3xl mb-2 font-bold leading-[0.8] lg:text-5xl dark:text-white">
                         DAVID <span>LAWRENCE</span>
                     </motion.h1>
                     <motion.div 
@@ -62,7 +62,7 @@ const Home =() => {
                     fadeIn('up', 0.5)
                 } initial="hidden"
                  whileInView={'show'} 
-                 viewport={{once:false, amount:0.7}} className="md:max-w-[600px]  md:text-md lg:text-md text-justify">
+                 viewport={{once:false, amount:0.7}} className="md:max-w-[600px] text-sm md:text-md lg:text-md text-justify">
                     lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
                     lorem ipsum sit emet consect
                     lorem ipsum sit e consectlorem ipsum sit emet consectlorem ipsum sit emet consect

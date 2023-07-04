@@ -29,7 +29,7 @@ const About = () => {
   {
     id: 4,
     title: <p>Hours <br/>Spent </p>,
-    value: 1000,
+    value: 966,
   }
 ]
   const {ref, inView} = useInView([
@@ -45,7 +45,7 @@ const About = () => {
                 mix-blend-luminosity bg-top rounded-2xl hover:scale-105 duration-300"></motion.div>
                 {/** about image for sm */}
                 <div className="md:hidden ">
-                  <img src={about} className="h-2/3 rounded-md dark:mix-plus-lighter" alt="small screen pic"/>
+                  <img src={about} className="h-1/3 rounded-md dark:mix-plus-lighter" alt="small screen pic"/>
                 </div>
                 {/* texts here */}
                 <div className="flex-1 ">
@@ -59,7 +59,7 @@ const About = () => {
                   </motion.h3>
                     
                   <motion.p variants={fadeIn('left', 0.5)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.1}}
-                  className="mb-4 text-justify md:text-md">                
+                  className="mb-4 text-justify text-sm md:text-md">                
                     lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
                     lorem ipsum sit emet consect
                     lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
@@ -77,10 +77,10 @@ const About = () => {
                     {stats.map(({id,value,title}) =>(
 
                     <div key={id}>
-                    <div className="text-2xl md:text-3xl text-primary font-bold mb-2">                    
-                    {inView ? <CountUp start={0}  end={value} duration={6}/>: null}       
+                    <div className="text-xl md:text-3xl text-primary font-bold mb-2">                    
+                    {inView ? <CountUp start={0}  end={value} duration={6}/>: null}    
                     </div>
-                    <div className="lg:text-sm tracking-[0px] font-bold">
+                    <div className="text-sm tracking-[0px] font-bold">
                     {title}
                     </div>
                     </div> 

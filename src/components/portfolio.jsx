@@ -42,8 +42,8 @@ const Portfolio =() =>{
                         <div key={id} className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105 lg:text-md">
                         <img src={src} alt="img" className="rounded-md "/>
                         <div className="flex items-center justify-center">
-                            <button className="w-1/2 px-6 py-3 m-2 duration-200 hover:scale-105 text-teal-500 font-bold uppercase">Code</button>
-                            <button className="w-1/2 px-6 py-3 m-2 duration-200 hover:scale-105 text-teal-500 font-bold uppercase">Demo</button>
+                            <button className="w-1/2 text-sm md:text-md px-6 py-3 m-2 duration-200 hover:scale-105 text-teal-500 font-bold uppercase">Code</button>
+                            <button className="w-1/2 text-sm md:text-md px-6 py-3 m-2 duration-200 hover:scale-105 text-teal-500 font-bold uppercase">Demo</button>
                         </div>
                         </div>
                     

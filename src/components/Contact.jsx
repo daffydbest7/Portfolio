@@ -14,14 +14,14 @@ const Contact = () =>{
                 className="flex justify-center items-center">
                     <form action="https://getform.io/f/3edaa17c-e0e6-4cd4-806c-eb3700a415f7" method="POST" className="flex flex-col w-full md:w-1/2">
                         <input type="text" name="name" placeholder="Enter your name" 
-                        className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"/>
+                        className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none" required/>
                         {/**hidden honeypot input to prevent spams */}
                         <input type="hidden" name="_gotcha" />
 
                         <input type="email" name="email" placeholder="Enter your email address" 
-                        className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"/>
+                        className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none" required/>
                         <textarea name="message" rows="10" placeholder="Hi, I think we need a frontend developer for our product at Company Y. How soon can you jump on to discuss this? "
-                        className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"></textarea>
+                        className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none" required></textarea>
                         <button className="text-white bg-gradient-to-b from-teal-200 to-teal-500 px-4 py-2 lg:px-6 lg:py-3 my-8 mx-auto flex items-center rounded-md hover:scale-105 duration-300">Hey! Let's talk</button>
                     </form>
                 </motion.div>

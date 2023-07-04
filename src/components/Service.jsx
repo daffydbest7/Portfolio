@@ -58,9 +58,9 @@ const Services =()=>{
                             <div className="border border-b border-white mb-4 hover:scale-105 duration-300 " key={index}>
                                 <div className="lg:max-w-[400px] ml-4">
                                 <h4 className="text-teal-500 mt-2 text-xl lg:text-xl">{name} </h4>  
-                                <p className="mb-4 lg:text-sm">{description}</p>
+                                <p className="mb-4 text-sm">{description}</p>
                                 </div>
-                                <div className="flex mb-2 ml-4 text-teal-500 items-center "><button href="#" >{link}</button> <BsArrowRight size={8} className="ml-2"/></div>   
+                                <div className="flex text-sm mb-2 ml-4 text-teal-500 items-center "><button href="#" >{link}</button> <BsArrowRight size={8} className="ml-2"/></div>   
                             </div>
                            ) 
 
