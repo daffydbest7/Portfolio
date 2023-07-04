@@ -45,7 +45,7 @@ const About = () => {
                 mix-blend-luminosity bg-top rounded-2xl hover:scale-105 duration-300"></motion.div>
                 {/** about image for sm */}
                 <div className="md:hidden ">
-                  <img src={about} className="h-1/3 rounded-md dark:mix-plus-lighter" alt="small screen pic"/>
+                  <img src={about} className="rounded-md dark:mix-plus-lighter" alt="small screen pic"/>
                 </div>
                 {/* texts here */}
                 <div className="flex-1 ">
@@ -55,7 +55,7 @@ const About = () => {
                     
                   <motion.h3 variants={fadeIn('left', 0.4)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.1}} 
                   className="mb-8 font-bold text-md md:text-xl">
-                    I'm a freelance fullstack Developer with over 3 years of experience.
+                    I'm a freelance fullstack Developer with over 4 years of experience.
                   </motion.h3>
                     
                   <motion.p variants={fadeIn('left', 0.5)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.1}}

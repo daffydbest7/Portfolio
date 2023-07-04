@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Quickscroll from './components/Quickscroll';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {WiDaySunny} from 'react-icons/wi';
+import { Link } from 'react-scroll';
 
 function App() {
   const [darkMode,setDarkMode] = useState(false)
@@ -31,8 +32,8 @@ function App() {
                     :
                     <BsFillMoonStarsFill className='cursor-pointer text-md md:text-2xl hover:text-teal-400 hover:scale-110 duration-200'/> }</li>
                     
-                  <li> <button className='bg-gradient-to-r from-cyan-400 to-teal-600 text-white text-xl px-2 py-2 rounded-md ml-8 md:ml-12 
-                  md:px-2 md:py-2 md:text-xl hover:bg-gradient-to-l from-cyan-400 to-teal-600 hover:scale-105 duration-200' href="#">Hire Me</button></li>
+                  <li> <Link to="contact" smooth={true} spy={true} duration={2000} className='bg-gradient-to-r from-cyan-400 to-teal-600 text-white text-xl px-2 py-2 rounded-md ml-8 md:ml-12 
+                  md:px-2 md:py-2 md:text-xl hover:bg-gradient-to-l from-cyan-400 to-teal-600 hover:scale-105 duration-200' >Hire Me</Link></li>
                 </ul>
             </nav>
             </div>
