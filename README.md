@@ -1,7 +1,7 @@
 STEPS 
 
 1. create new react app (npx create-react-app ./)
-2. Install tailwindcss dependecies
+2. Install tailwindcss dependencies
 3. configure tailwind.config.js
 4. install react icons (npm i react icons)
 5. install react router dom  (npm i react-router-dom )
