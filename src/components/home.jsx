@@ -10,10 +10,10 @@ import {TypeAnimation} from 'react-type-animation';
 import {motion} from 'framer-motion';
 //import variants
 import {fadeIn} from '../variants';
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 //import image
-import Profile from "../images/profile_.jpg";
-import nightmode from "../images/nightmode.jpg";
+import Profile from "../images/david.jpg";
+import nightmode from "../images/DAV.jpg";
 
 
 
@@ -43,11 +43,13 @@ const Home =() => {
                      className="uppercase mb-6 text-md lg:text-3xl leading-[1]">
                     <span className="mr-4"> I am a</span>
                     <TypeAnimation sequence={[
-                        'Full stack Developer',
+                        'Software Developer',
                         2000,
                         'Data Analyst',
                         2000,
                         'Researcher',
+                        2000,
+                        'Graphic Designer',
                         2000,
                     ]}
                     speed={50}
@@ -62,15 +64,10 @@ const Home =() => {
                     fadeIn('up', 0.5)
                 } initial="hidden"
                  whileInView={'show'} 
-                 viewport={{once:false, amount:0.7}} className="md:max-w-[600px] text-sm md:text-md lg:text-md text-justify">
-                    lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
-                    lorem ipsum sit emet consect
-                    lorem ipsum sit e consectlorem ipsum sit emet consectlorem ipsum sit emet consect
-                    lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
-                    lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
-                    lorem ipsum sit emet consect
-                    lorem ipsum sit emet consectlorem ipsum sit emet consectlorem ipsum sit emet consect
-                    lorem ipsum sit emet consectlorem ipsum 
+                 viewport={{once:false, amount:0.7}} className="md:max-w-[600px] text-sm md:text-md lg:text-lg text-justify">
+                    Hello there! I'm thrilled to welcome you to my portfolio and share my journey as a passionate MERN stack developer
+                    with over 4 years of experience in the tech industry, hoping to delve into blockchain development soonest. I've always believed
+                    in the power of clean and efficient code, and I'm eager to make a positive impact through my skills and dedication.
                 </motion.p>
                 <motion.div 
                 variants={
@@ -78,7 +75,7 @@ const Home =() => {
                 } initial="hidden"
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
-                 className="flex justify-center lg:justify-start  space-x-3 my-4 text-2xl text-black lg:text-4xl my-8 lg:hidden dark:text-white">                  
+                 className="flex justify-center lg:justify-start  space-x-3 text-2xl text-black lg:text-4xl my-8 lg:hidden dark:text-white">                  
                     <Link to="https://github.com/daffydbest7"> <FaGithub className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
                     <Link to="https://instagram.com/daffydbest"><FaInstagram className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
                     <Link to="https://twitter.com/daffydbest"><FaTwitter className="hover:text-teal-400 hover:scale-105 duration-300" /></Link>       
@@ -93,9 +90,11 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                  className=" mt-8">
+                    <Link to="portfolio" smooth={true} spy={true} duration={2000}>
                     <button  className="group flex mx-auto p-1 lg:p-2 btn btn-sm lg:btn-lg rounded-xl text-white 
-                    bg-teal-500 drop-shadow-lg lg:m-0 cursor-pointer items-center"><span>PORTOLIO</span> <span className="group-hover:rotate-90 duration-300"><MdOutlineKeyboardArrowRight className="text-2xl "/></span> </button>
-                </motion.div>
+                    bg-teal-500 drop-shadow-lg lg:m-0 cursor-pointer items-center"><span>PORTOLIO</span> <span className="group-hover:rotate-90 duration-300"><MdOutlineKeyboardArrowRight className="text-2xl "/></span>  </button>
+                    </Link>
+                </motion.div> 
                 </div>
                 {/** daylight mode image */}
                 <motion.div
@@ -105,7 +104,7 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                   className="dark:hidden">
-                    <img src={Profile} className="max-w-[150px] max-h-[150px] lg:max-w-[200px] lg:max-h-[200px] rounded-full " alt="pic"/>
+                    <img src={Profile} className="max-w-[150px] max-h-[150px] lg:max-w-[250px] lg:max-h-[250px] rounded-full " alt="pic"/>
                 </motion.div>
 
                 {/**night mode image */}
@@ -116,7 +115,7 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                   className="hidden dark:block">
-                    <img src={nightmode} className="max-w-[150px] max-h-[150px] lg:max-w-[200px] lg:max-h-[200px] rounded-full hover:scale-105 duration-300 " alt="nightlifeimage"/>
+                    <img src={nightmode} className="max-w-[150px] max-h-[150px] lg:max-w-[250px] lg:max-h-[250px] rounded-full hover:scale-105 duration-300 " alt="nightlifeimage"/>
                 </motion.div>
             </div>
         </div>

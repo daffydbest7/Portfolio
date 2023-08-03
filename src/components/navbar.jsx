@@ -55,7 +55,7 @@ const Navbar =() =>{
         <nav name="navbar" className="fixed bottom-[-2px] lg:bottom-8 w-full overflow-hidden z-50 ">
         <div className="mx-auto">  
             {/* nav inner*/}
-            <div className="bg-gradient-to-l from-black/60 to-black/100 h-[7vh] lg:h-[60px] md:h-[60px] backdrop-blur-2xl md:rounded-full lg:rounded-full 
+            <div className="bg-gradient-to-l  h-[7vh] lg:h-[60px] md:h-[60px] backdrop-blur-2xl md:rounded-full lg:rounded-full 
            max-w-full md:max-w-[400px] lg:max-w-[400px] xl:max-w-[400px] mx-auto px-5 flex 
              justify-between items-center  text-white hover:bg-gradient-to-r from-black/60 to-black/100
               lg:dark:border border-teal-500"> 
