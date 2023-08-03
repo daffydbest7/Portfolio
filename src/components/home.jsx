@@ -10,7 +10,8 @@ import {TypeAnimation} from 'react-type-animation';
 import {motion} from 'framer-motion';
 //import variants
 import {fadeIn} from '../variants';
-import { Link } from "react-scroll";
+import {Link} from "react-router-dom";
+import { Link as LinkRoll } from 'react-scroll';
 //import image
 import Profile from "../images/david.jpg";
 import nightmode from "../images/DAV.jpg";
@@ -90,10 +91,10 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                  className=" mt-8">
-                    <Link to="portfolio" smooth={true} spy={true} duration={2000}>
+                    <LinkRoll to="portfolio" smooth={true} spy={true} duration={2000}>
                     <button  className="group flex mx-auto p-1 lg:p-2 btn btn-sm lg:btn-lg rounded-xl text-white 
                     bg-teal-500 drop-shadow-lg lg:m-0 cursor-pointer items-center"><span>PORTOLIO</span> <span className="group-hover:rotate-90 duration-300"><MdOutlineKeyboardArrowRight className="text-2xl "/></span>  </button>
-                    </Link>
+                    </LinkRoll>
                 </motion.div> 
                 </div>
                 {/** daylight mode image */}
