@@ -1,7 +1,6 @@
 import React from "react";
 import css from '../images/css.png';
 import html from '../images/html.png';
-import powerbi from '../images/Powerbi.png';
 import bootstrap from '../images/bootstrap.png';
 import django from '../images/django.png';
 import expressjs from '../images/expressjs.png';
@@ -10,8 +9,6 @@ import github from '../images/github.svg';
 import mongodb from '../images/mongodb.png';
 import mysql from '../images/mysql.png';
 import nodejs from '../images/nodejs.png';
-import powerapp from '../images/powerapp.png';
-import powerautomate from '../images/powerautomate.png';
 import python from '../images/python.png';
 import reactjs from '../images/reactjs.png';
 import restapi from '../images/restapi.png';
@@ -64,15 +61,6 @@ const Experience =() =>{
         },
         {
             id: 14,src: expressjs, title: 'express', style: 'shadow-gray-800 shadow-md  py-2 rounded-full',
-        },
-        {
-            id: 15,src: powerapp, title: 'power app',style: 'shadow-sky-400 shadow-md  py-2 rounded-full',           
-        },
-        {
-            id: 16, src: powerautomate, title: 'power automate',style: 'shadow-teal-500 shadow-md  py-2 rounded-full',     
-        },
-        {
-            id: 17,  src: powerbi,  title: 'power bi',  style: 'shadow-yellow-800 shadow-md  py-2 rounded-full ',           
         },
 
     ]

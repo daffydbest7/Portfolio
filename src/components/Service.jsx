@@ -38,7 +38,7 @@ const Services =()=>{
                 {/* text & image*/}
                 
                 <motion.div variants={fadeIn('right', 0.3)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.1}}
-                className=" text-center flex-1 lg:bg-service_img bg-cover  lg:max-w-[600px] lg:bg-bottom lg:mb-0 lg:bg-no-repeat dark:lg:mix-blend-luminosity rounded-2xl lg:hover:scale-110 duration-300">
+                className=" text-center flex-1 lg:bg-service_new bg-cover mix-blend-luminosity lg:max-w-[600px] lg:bg-bottom lg:mb-0 lg:bg-no-repeat dark:lg:mix-blend-luminosity rounded-2xl lg:hover:scale-110 duration-300">
                     
                     <h2 className="text-teal-500 lg:text-white font-bold text-2xl uppercase mb-6 pt-4 lg:text-5xl"> What I Do.</h2>
                     <h3 className="dark:text-white text-md mb-16 lg:text-xl lg:text-white">

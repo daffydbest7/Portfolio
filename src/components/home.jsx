@@ -13,8 +13,8 @@ import {fadeIn} from '../variants';
 import {Link} from "react-router-dom";
 import { Link as LinkRoll } from 'react-scroll';
 //import image
-import Profile from "../images/david.jpg";
-import nightmode from "../images/DAV.jpg";
+import Profile from "../images/david_new.jpg";
+import nightmode from "../images/david.jpg";
 
 
 
@@ -105,7 +105,7 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                   className="dark:hidden">
-                    <img src={Profile} className="max-w-[150px] max-h-[150px] lg:max-w-[250px] lg:max-h-[250px] rounded-full " alt="pic"/>
+                    <img src={Profile} className="max-w-[150px] max-h-[150px] lg:max-w-[350px] lg:max-h-[350px] rounded-full " alt="pic"/>
                 </motion.div>
 
                 {/**night mode image */}
@@ -116,7 +116,7 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                   className="hidden dark:block">
-                    <img src={nightmode} className="max-w-[150px] max-h-[150px] lg:max-w-[250px] lg:max-h-[250px] rounded-full hover:scale-105 duration-300 " alt="nightlifeimage"/>
+                    <img src={nightmode} className="max-w-[150px] max-h-[150px] lg:max-w-[300px] lg:max-h-[300px] rounded-full hover:scale-105 duration-300 " alt="nightlifeimage"/>
                 </motion.div>
             </div>
         </div>

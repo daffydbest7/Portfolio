@@ -4,7 +4,7 @@ import React from "react";
 import CountUp from 'react-countup'
 import { motion } from "framer-motion";
 import {fadeIn} from '../variants';
-import about from '../images/DAVEGROOVE.jpg';
+import office_image from '../images/office image.jpg';
 //intersection observer hook
 import { useInView } from "react-intersection-observer";
 
@@ -47,11 +47,11 @@ const About = () => {
             <div className="flex  flex-col-reverse lg:flex-row lg:gap-x-12 lg:gap-y-0 lg:items-start ">
                 {/* about image */}
                 <motion.div variants={fadeIn('right', 0.2)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.1}}
-                className="hidden md:block flex-1 bg-about h-[200px] md:h-[300px] lg:h-[300px] xl:h-[300px] bg-cover bg-no-repeat 
+                className="hidden md:block flex-1 bg-about_new h-[200px] md:h-[300px] lg:h-[300px] xl:h-[500px] bg-cover bg-no-repeat 
                 mix-blend-luminosity bg-top rounded-2xl hover:scale-105 duration-300"></motion.div>
                 {/** about image for sm */}
                 <div className="md:hidden ">
-                  <img src={about} className="rounded-lg dark:mix-plus-lighter animate-pulse" alt="small screen pic"/>
+                  <img src={office_image} className="rounded-lg dark:mix-plus-lighter " alt="small screen pic"/>
                 </div>
                 {/* texts here */}
                 <div className="flex-1 ">

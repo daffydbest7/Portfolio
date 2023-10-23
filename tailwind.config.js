@@ -35,7 +35,9 @@ module.exports = {
         },
         backgroundImage:{
           about: "url('./images/about.jpg')",
+          about_new: "url('./images/office image 1.jpg')",
           service_img:"url('./images/developer.jpg')",
+          service_new: "url('./images/office image 2.jpg')",
         }       
       },
       fontFamily: {
