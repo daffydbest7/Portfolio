@@ -79,10 +79,10 @@ const Portfolio =() =>{
                 className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 ">
                 {
                     portfolios.map(({id,src,desc,url,style}) => (                       
-                        <div key={id} className={`max-h-[270px] shadow-md rounded-lg duration-200 hover:animate-pulse hover:scale-105 lg:text-md ${style}`}>
+                        <div key={id} className={`max-h-[300px] lg:max-h-[270px] shadow-md rounded-lg duration-200 hover:animate-pulse hover:scale-105 lg:text-md ${style}`}>
                         <img src={src} alt="img" className="w-full h-[170px] mx-auto rounded-md"/> 
                         <div className="mx-auto text-center">
-                            <p className="lg:text-sm  px-2  m-2 text-black dark:text-white uppercase  font-bold ">{desc}</p>
+                            <p className="lg:text-sm  px-2  m-2 text-black dark:text-white font-bold ">{desc}</p>
                             <Link to={url} target="_blank" className="text-sm md:text-md m-2  text-teal-500 font-bold uppercase pb-12 lg:pb-2">Verify</Link>
                         </div>
                         </div>
