@@ -24,7 +24,7 @@ function App() {
         <div className='mx-10 lg:mx-0 md:mx-0 xl:mx-0 '>
         <div className="lg:container md:container xl:container mx-auto  min-h-[15vh] lg:min-h-[30vh] ">
             <nav className='lg:container md:container xl:container py-10 flex justify-between'>
-                <h1 className='text-md md:text-3xl hover:scale-110 duration-200 font-signature dark:text-white'> developedbydave</h1>
+                <h1 className='text-md md:text-3xl hover:scale-110 duration-200 font-signature dark:text-white'> KingDavid &#8482;</h1>
                 <ul className='flex items-center'>
                   <li onClick={()=>setDarkMode(!darkMode)}>
                     {darkMode ? <WiDaySunny  className='cursor-pointer text-md md:text-2xl hover:text-teal-400 hover:scale-110 duration-200 text-white'/> 

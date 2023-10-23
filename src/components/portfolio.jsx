@@ -20,43 +20,43 @@ const Portfolio =() =>{
     const portfolios =[ 
         {                           
             id:1, src: binance, desc: "Binance Charity Chat: Utiva X Binance Africa discuss the importance of blockchain education across Africa.",  
-            url: "https://x.com/BinanceBCF/status/1679173941586456577?s=20",  style: 'shadow-gray-800 shadow-lg rounded-lg ',  
+            url: "https://x.com/BinanceBCF/status/1679173941586456577?s=20", target:"_blank", style: 'shadow-gray-800 shadow-lg rounded-lg ',  
         },          
         {
             id:2, src: bennyteam, desc: "Data / System Analyst For Bennyspecs Mobile App MockUp", 
-            url: " ",  style: 'shadow-teal-800 shadow-lg rounded-lg ',  
+            url: "#", target: "", style: 'shadow-teal-800 shadow-lg rounded-lg ',  
         },
         {
             id:8,src: graphics, desc: "Sample KingDavid Branded Graphics on Dribble",  
-            url: "https://dribbble.com/KingDavid_001",  style: 'shadow-cyan-800 shadow-lg  rounded-lg ',  
+            url: "https://dribbble.com/KingDavid_001", target:"_blank", style: 'shadow-cyan-800 shadow-lg  rounded-lg ',  
         },
         
         {
             id:5,src: qrcode_man, desc: "Dynamic QrCode Generator With Payment API Integration",  
-            url: "https://davidqrcode.onrender.com",
+            url: "https://davidqrcode.onrender.com", target:"_blank",
             style: 'shadow-purple-800 shadow-lg rounded-lg ',  
         },       
         {
             id:6,src: blog, desc: "Personal Blog Project: Under Construction",  
-            url: "https://byteplay.onrender.com", style: 'shadow-red-800 shadow-lg  rounded-lg ',  
+            url: "https://byteplay.onrender.com", target:"_blank", style: 'shadow-red-800 shadow-lg  rounded-lg ',  
         },
         {
             id:3,src: wclone1, desc: "Official Cook Collective Landing Page Clone: Using HTML, CSS Web View ONLY",  
-            url: "https://vhee4.github.io/Group_10_website_cloning/", style: 'shadow-blue-800 shadow-lg rounded-lg ',  
+            url: "https://vhee4.github.io/Group_10_website_cloning/",target:"_blank", style: 'shadow-blue-800 shadow-lg rounded-lg ',  
         },
         {
             id:7,src: djangoportfolio, desc: "Portfolio Using Python and Django",  
-            url: "",  style: 'shadow-yellow-800 shadow-lg rounded-lg ',  
+            url: "#",  target: "", style: 'shadow-yellow-800 shadow-lg rounded-lg ',  
         },
        
         {
             id:4,src: javadrum1, desc: "Drumkit Using Javascript Click Event",  
             url: "https://daffydbest7.github.io/-JavaScript-30-days-challenge/JavaScript%20Drum%20Kit/click.html",
-            style: 'shadow-green-800 shadow-lg rounded-lg ',  
+            target:"_blank",style: 'shadow-green-800 shadow-lg rounded-lg ',  
         },
         {
             id:9,src: developer, desc: "Freelancing Services",  
-            url: " ",  style: 'shadow-cyan-800 shadow-lg  rounded-lg ',  
+            url: "#", target: "", style: 'shadow-cyan-800 shadow-lg  rounded-lg ',  
         },
         
     ]
@@ -78,12 +78,12 @@ const Portfolio =() =>{
                 <motion.div  variants={fadeIn('right', 0.3)} initial="hidden" whileInView={'show'} viewport={{once:true, amount:0.1}}
                 className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 ">
                 {
-                    portfolios.map(({id,src,desc,url,style}) => (                       
+                    portfolios.map(({id,src,desc,url,style,target}) => (                       
                         <div key={id} className={`max-h-[300px] lg:max-h-[270px] shadow-md rounded-lg duration-200 hover:animate-pulse hover:scale-105 lg:text-md ${style}`}>
                         <img src={src} alt="img" className="w-full h-[170px] mx-auto rounded-md"/> 
                         <div className="mx-auto text-center">
                             <p className="lg:text-sm  px-2  m-2 text-black dark:text-white font-bold ">{desc}</p>
-                            <Link to={url} target="_blank" className="text-sm md:text-md m-2  text-teal-500 font-bold uppercase pb-12 lg:pb-2">Verify</Link>
+                            <Link to={url} target={target} className="text-sm md:text-md m-2  text-teal-500 font-bold uppercase pb-12 lg:pb-2">Verify</Link>
                         </div>
                         </div>
                     
