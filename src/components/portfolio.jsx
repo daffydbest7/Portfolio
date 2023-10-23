@@ -24,7 +24,7 @@ const Portfolio =() =>{
         },          
         {
             id:2, src: bennyteam, desc: "Data / System Analyst For Bennyspecs Mobile App MockUp", 
-            url: "https://bennydrop.com/about-us/",  style: 'shadow-teal-800 shadow-lg rounded-lg ',  
+            url: " ",  style: 'shadow-teal-800 shadow-lg rounded-lg ',  
         },
         {
             id:8,src: graphics, desc: "Sample KingDavid Branded Graphics on Dribble",  
