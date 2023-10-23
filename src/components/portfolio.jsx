@@ -27,15 +27,10 @@ const Portfolio =() =>{
             url: "https://bennydrop.com/about-us/",  style: 'shadow-teal-800 shadow-lg rounded-lg ',  
         },
         {
-            id:3,src: wclone1, desc: "Official Cook Collective Landing Page Clone: Using HTML, CSS Web View ONLY",  
-            url: "https://vhee4.github.io/Group_10_website_cloning/", style: 'shadow-blue-800 shadow-lg rounded-lg ',  
+            id:8,src: graphics, desc: "Sample KingDavid Branded Graphics on Dribble",  
+            url: "https://dribbble.com/KingDavid_001",  style: 'shadow-cyan-800 shadow-lg  rounded-lg ',  
         },
-    
-        {
-            id:4,src: javadrum1, desc: "Drumkit Using Javascript Click Event",  
-            url: "https://daffydbest7.github.io/-JavaScript-30-days-challenge/JavaScript%20Drum%20Kit/click.html",
-            style: 'shadow-green-800 shadow-lg rounded-lg ',  
-        },
+        
         {
             id:5,src: qrcode_man, desc: "Dynamic QrCode Generator With Payment API Integration",  
             url: "https://davidqrcode.onrender.com",
@@ -46,13 +41,18 @@ const Portfolio =() =>{
             url: "https://byteplay.onrender.com", style: 'shadow-red-800 shadow-lg  rounded-lg ',  
         },
         {
+            id:3,src: wclone1, desc: "Official Cook Collective Landing Page Clone: Using HTML, CSS Web View ONLY",  
+            url: "https://vhee4.github.io/Group_10_website_cloning/", style: 'shadow-blue-800 shadow-lg rounded-lg ',  
+        },
+        {
             id:7,src: djangoportfolio, desc: "Portfolio Using Python and Django",  
             url: "",  style: 'shadow-yellow-800 shadow-lg rounded-lg ',  
         },
        
         {
-            id:8,src: graphics, desc: "Sample KingDavid Branded Graphics on Dribble",  
-            url: "https://dribbble.com/KingDavid_001",  style: 'shadow-cyan-800 shadow-lg  rounded-lg ',  
+            id:4,src: javadrum1, desc: "Drumkit Using Javascript Click Event",  
+            url: "https://daffydbest7.github.io/-JavaScript-30-days-challenge/JavaScript%20Drum%20Kit/click.html",
+            style: 'shadow-green-800 shadow-lg rounded-lg ',  
         },
         {
             id:9,src: developer, desc: "Freelancing Services",  

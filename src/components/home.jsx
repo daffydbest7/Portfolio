@@ -105,7 +105,7 @@ const Home =() => {
                  whileInView={'show'} 
                  viewport={{once:false, amount:0.7}} 
                   className="dark:hidden">
-                    <img src={Profile} className="max-w-[150px] max-h-[150px] lg:max-w-[350px] lg:max-h-[350px] rounded-full " alt="pic"/>
+                    <img src={Profile} className="max-w-[200px] max-h-[200px] lg:max-w-[350px] lg:max-h-[350px] rounded-full " alt="pic"/>
                 </motion.div>
 
                 {/**night mode image */}
