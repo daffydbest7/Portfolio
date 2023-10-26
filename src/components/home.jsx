@@ -80,7 +80,7 @@ const Home =() => {
                     <Link to="https://github.com/daffydbest7"> <FaGithub className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
                     <Link to="https://instagram.com/daffydbest"><FaInstagram className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
                     <Link to="https://twitter.com/daffydbest"><FaTwitter className="hover:text-teal-400 hover:scale-105 duration-300" /></Link>       
-                    <Link to="/DAVIDLAWRENCE.pdf" download={true}> <TfiUser className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
+                    <Link to="DavidLawrence_dev.pdf" target="_blank" download={true}> <TfiUser className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
                     <Link to="https://www.linkedin.com/in/david-lawrence-6b2513b0"><FaLinkedinIn className="hover:text-teal-500 hover:scale-105 duration-300"/></Link>
                     <Link to="mailto:daffydbest@gmail.com"><HiOutlineMail className="hover:text-teal-400 hover:scale-105 duration-300" /></Link>                            
                 </motion.div>
